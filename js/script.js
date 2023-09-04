@@ -49,10 +49,10 @@ function isThaiCharacter(char) {
   
     setTimeout(() => {
       if (correctLetters.length === word.length) {
-        alert(`Congrats! You found the word ${word.toUpperCase()}`);
+        alert(`ยินดีด้วย คุณทายถูก! คำตอบคือ ${word.toUpperCase()}`);
         return randomWord();
       } else if (maxGuesses < 1) {
-        alert("Game over! You don't have remaining guesses");
+        alert("เกมจบแล้ว!! คุณทายผิด");
         for (let i = 0; i < word.length; i++) {
           inputs.querySelectorAll("input")[i].value = word[i];
         }
